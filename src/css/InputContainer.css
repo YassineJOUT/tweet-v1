@@ -1,0 +1,10 @@
+.input-container{
+    border-radius: 5px;
+    width: 30%;
+    margin-left:2%;
+    height: 60%;
+    padding-block-start: 30px;
+    align-content: flex-start;
+    position: absolute;
+    
+} 
