@@ -4,11 +4,11 @@ import InputContainer from './InputContainer'
 import '../css/Container.css'
 
 
-const InteractionContainer = (props) => {
+const InteractionContainer = ({phase, onClick,data}) => {
     return (
         <div className="container">
-            <InputContainer />
-            <Logging />
+            <InputContainer phase={phase} onClick={onClick} />
+            <Logging data={data}/>
         </div>
     );
 };
