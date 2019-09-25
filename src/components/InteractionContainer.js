@@ -1,3 +1,7 @@
+/*
+  * @file-description : Interacation container component, it renders the input container and the logging component
+  * @author{Yassine JOUT} yassine jout@gmail.com
+*/
 import React from 'react'
 import Logging from './Logging'
 import InputContainer from './InputContainer'

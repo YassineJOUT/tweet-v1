@@ -1,6 +1,9 @@
+/*
+  * @file-description : Input container component, it renders the buttons using conditional rendering
+  * @author{Yassine JOUT} yassine jout@gmail.com
+*/
 import React from 'react';
 import Button from './Button'
-import Select from './Select'
 import '../css/InputContainer.css'
 
 

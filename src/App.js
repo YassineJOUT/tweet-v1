@@ -1,3 +1,8 @@
+/*
+  * @file-description : App component renders all the components of the app,its a statefull component
+                       that handles click events and forward the state to its childern via props
+  * @author{Yassine JOUT} yassine jout@gmail.com
+*/
 import React from 'react';
 import './css/App.css';
 import Nav from './components/Nav'

@@ -1,18 +1,22 @@
+/*
+  * @file-description : Bar chart component that displays a bar chart with spam/no spam count
+  * @author{Yassine JOUT} yassine jout@gmail.com
+*/
 import React from 'react'
 import '../css/Graph.css'
 import { Bar } from 'react-chartjs-2';
 
 const BarGraph = ({data}) => {
-    
+    //parse data
     let jsonData = JSON.parse(data);
-    
+    // figure out which button is clicked
     let whichCase = (jsonData) ? 
                 (jsonData.hasOwnProperty('users') ? 1 
                     : 
                     (jsonData.hasOwnProperty('Reteweet') ? 2 
                     : -1)) 
                 : -1;
-
+    // get data array
     let spamData = (jsonData) ?
                  ((jsonData.spam !== undefined) ? [jsonData.spam,jsonData.notspam]
                     : null) 

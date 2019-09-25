@@ -1,3 +1,7 @@
+/*
+  * @file-description : TableResult component uses conditional rendering to render the appropriate table
+  * @author{Yassine JOUT} yassine jout@gmail.com
+*/
 import React from 'react'
 import '../css/Table.css'
 import DataTable from 'react-data-table-component';

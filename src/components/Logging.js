@@ -1,3 +1,8 @@
+/*
+  * @file-description : Logging component, its a statefull component that keeps
+                       tracks of the previous log and displays the new one
+  * @author{Yassine JOUT} yassine jout@gmail.com
+*/
 import React from 'react'
 import '../css/Logging.css'
 
@@ -32,12 +37,9 @@ class Logging extends React.Component {
             log :  arr
         };
     }
-    
-    
       componentDidUpdate() {
         this.scrollToBottom();
       }
-    
     scrollToBottom() {
         this.el.scrollTop = this.el.scrollHeight;
       }
