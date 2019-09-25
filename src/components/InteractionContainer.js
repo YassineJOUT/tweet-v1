@@ -8,7 +8,7 @@ const InteractionContainer = ({phase, onClick,data}) => {
     return (
         <div className="container">
             <InputContainer phase={phase} onClick={onClick} />
-            <Logging data={data}/>
+            <Logging data={data} phase={phase}/>
         </div>
     );
 };
