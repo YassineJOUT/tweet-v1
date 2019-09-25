@@ -21,8 +21,8 @@ const InputContainer = ({phase,onClick}) => {
                 subtxt2 = "Video CNN";
                 break;
         case 3: text = "CNN" ;
-                subtxt1 = "Detecting malicious Profiles";
-                subtxt2 = "Detecting malicious Tweets";   
+                subtxt1 = "Detecting malicious Tweets";
+                subtxt2 = "Detecting malicious Profiles";   
                 nextPhase = 1;
                 break;
         default: break;
