@@ -47,9 +47,11 @@ class Logging extends React.Component {
                 <div className="logging-container">
                     <span className="log-title">Log results</span>
                     <div class="logging" ref={el => { this.el = el; }} >
-                        {this.state.log.map(item => (
-                            <span ><pre >{item}</pre><br /></span>
-                        ))}
+                        {this.state.log.map((item,key) =>  (
+                            <span key={key}><pre >{item}</pre><br /></span>
+                                        )
+                                    )
+                            }
                     </div>
                 </div> );
         }
