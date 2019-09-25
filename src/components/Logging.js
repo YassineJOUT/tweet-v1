@@ -39,17 +39,19 @@ class Logging extends React.Component {
       }
     
     scrollToBottom() {
-        this.el.scrollIntoView({ behavior: 'smooth' });
+        this.el.scrollTop = this.el.scrollHeight;
       }
    
     render = () => {
             return (
-            <div class="logging"  >
-                {this.state.log.map(item => (
-                    <span ref={el => { this.el = el; }}><pre>{item}</pre><br /></span>
-                ))}
-            </div>
-            );
+                <div className="logging-container">
+                    <span className="log-title">Log results</span>
+                    <div class="logging" ref={el => { this.el = el; }} >
+                        {this.state.log.map(item => (
+                            <span ><pre >{item}</pre><br /></span>
+                        ))}
+                    </div>
+                </div> );
         }
 }
 
