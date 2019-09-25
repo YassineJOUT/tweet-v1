@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import Nav from './components/Nav'
 import InteractionContainer from './components/InteractionContainer'
 import ResultContainer from './components/ResultContainer'
