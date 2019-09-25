@@ -16,6 +16,7 @@ class App extends React.Component {
     this.setPhase = this.setPhase.bind(this);
   }
   setPhase = (phase,data) => {
+    //console.log(data)
     this.setState({
       phase,
       data
@@ -33,8 +34,8 @@ class App extends React.Component {
     }
 
     ApiClient(whatToCall+'/').then(res => {
-      console.log(res.data);
-      this.setPhase(phase,JSON.stringify(res.data.stringify));
+      //console.log(res.data);
+      this.setPhase(phase,JSON.stringify(res.data,undefined, 2));
       });
     
   };
@@ -42,8 +43,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav name="Detecting malicous spam" />
-        <InteractionContainer phase={this.state.phase} onClick={this.handleClick} data={this.state.data}/>
-        <ResultContainer />
+        <InteractionContainer phase={this.state.phase} onClick={this.handleClick} data={this.state.data}/>   
+        <ResultContainer phase={this.state.phase} data={this.state.data}/>
       </div>
     );
   }

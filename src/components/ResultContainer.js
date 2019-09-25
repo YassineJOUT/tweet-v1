@@ -7,7 +7,7 @@ const ResultContainer = ({phase, data}) => {
     return (
         <div className="container result">
             <TableResult phase={phase} data={data}/>
-            <BarGraph  phase={phase} data={data}/>
+            <BarGraph data={data}/>
         </div>
     );
 };

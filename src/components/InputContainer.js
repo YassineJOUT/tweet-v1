@@ -29,6 +29,7 @@ const InputContainer = ({phase,onClick}) => {
     }
     return (
         <div className="input-container">
+            
             {phase === 1 ?
                 (<Button text={text} onClick={() => onClick(nextPhase,0)} />)
             :

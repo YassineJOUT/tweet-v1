@@ -1,9 +1,9 @@
 .graph {
     border-radius: 5px;
     padding-block-start: 20px;
-    padding-left: 10px;
+    padding: 10px;
     width : 33%;
-    height: 75%;
+    height: 80%;
     font-size: 10px;
     margin-right: 2%;
     float: right;
@@ -12,4 +12,9 @@
     background-color: white;
     border-radius: 5px;
     text-align: left;
+}
+.danger{
+    color:red;
+    margin-left :auto;
+    margin-right :auto;
 }
