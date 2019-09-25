@@ -44,7 +44,7 @@ This ui was made in the context of a thesis proof of concept for spam detection 
 
     during the dev of this interface I have used and learned the following : 
 
-    Markup : * function component
+             * function component
              * stateful component
              * lefting state up
              * life cycle hooks
@@ -61,7 +61,7 @@ This ui was made in the context of a thesis proof of concept for spam detection 
 
 ### `Next version`
 
-    Markup : * Use redux 
+             * Use redux 
              * saga middleware
              * HOC (High Order Component)
              * Use react router to navigate
