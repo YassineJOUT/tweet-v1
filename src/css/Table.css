@@ -45,4 +45,5 @@ td {
     padding-block-start: 30px;
     align-content: flex-start;
     position: absolute;
+    overflow-y: scroll;
 }
